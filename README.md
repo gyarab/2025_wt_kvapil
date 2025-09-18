@@ -25,8 +25,8 @@ Za své zásluhy o rozvoj britského průmyslu a technologickou dostupnost byl C
 Clive Sinclair zemřel v roce 2021, ale jeho odkaz žije dál. ZX Spectrum a další jeho vynálezy si připomínají nejen sběratelé a fanoušci, ale i všichni, kdo si uvědomují, jak velký vliv měl na rozvoj informatiky a zábavního průmyslu.
 
 ## Zdroje
-![Wikipedia](https://cs.wikipedia.org/wiki/Clive_Sinclair)
+- [Wikipedia](https://cs.wikipedia.org/wiki/Clive_Sinclair)
 
-![The Guradian](https://www.theguardian.com/games/2021/sep/17/clive-sinclair-zx-spectrum-offbeat-brilliance)
+- [The Guradian](https://www.theguardian.com/games/2021/sep/17/clive-sinclair-zx-spectrum-offbeat-brilliance)
 
-![IEEE](https://www.computer.org/profiles/clive-sinclair)
+- [IEEE](https://www.computer.org/profiles/clive-sinclair)
