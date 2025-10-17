@@ -21,23 +21,36 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="../prvni_web/index.html">Úvod</a>
+                        <a class="nav-link" href="#uvod">Úvod</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="../prvni_web/pokus.html">Nabídka</a>
+                        <a class="nav-link" aria-current="page" href="#nabidka">Nabídka</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../prvni_web/pokus2.html">Něco</a>
+                        <a class="nav-link" href="#">Něco</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../prvni_web/pokus3.html">Kontakty</a>
+                        <a class="nav-link" href="#kontakty">Kontakty</a>
+                    </li>
+                </ul>
+
+                <!-- right-aligned group -->
+                <ul class="navbar-nav ms-auto d-flex gap-2 align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Přihlásit</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Registrace</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-primary text-white px-3" href="#">Košík (0)</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <header class="hero section" style="padding: 5px 0; background-color: #f8f9fa;">
+    <header class="hero section" style="padding: 5px 0; background-color: #f8f9fa;" id="uvod">
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center">
@@ -50,7 +63,7 @@
         </div>
     </header>
 
-    <div class="container" id="vyber" style="padding-bottom: 1rem;">
+    <div class="container" style="padding-bottom: 1rem;" id="nabidka">
         <h2 class="my-4 text-center">Náš výběr toaletních papírů</h2>
         <!--style="border-top: 1px solid rgba(0,0,0,0.06); margin-top: 1rem;"-->
         <div class="row">
@@ -105,7 +118,7 @@
         </div>
     </div>
 
-    <div class="container">
+    <div class="container" id="kontakty">
         <footer class="bg-white text-black" style="border-top: 1px solid rgba(0,0,0,0.6);"></footer>
             <div class="row py-4 align-items-center">
                 <div class="col-12 col-md-4 text-center text-md-start mb-3 mb-md-0">
