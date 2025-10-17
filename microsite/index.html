@@ -7,15 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        .prvni {
-            background-color: blanchedalmond;
-            height: 200px;
-        }
-
-        .druhy {
-            background-color: crimson;
-            height: 200px;
-        }
     </style>
 </head>
 
@@ -30,7 +21,10 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="../prvni_web/pokus.html">Nabídka</a>
+                        <a class="nav-link" href="../prvni_web/index.html">Úvod</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../prvni_web/pokus.html">Nabídka</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="../prvni_web/pokus2.html">Něco</a>
@@ -43,10 +37,32 @@
         </div>
     </nav>
 
-    
+    <header class="hero section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1 class="display-4">Vítejte na Toaleťáky.cz!</h1>
+                    <p class="lead">Nejlepší místo pro nákup toaletního papíru online.</p>
+                    <!--Protože váš zadek si zaslouží to nejlepší!-->
+                </div>
+            </div>
+        </div>
+    </header>
 
-    <div class="container">
-        <div class="row" style="margin-top: 6px;">
+    <div class="container" id="vyber">
+        <div class="row">
+            <div class="col-12 col-md-3">
+                <div class="card">
+                    <img src="https://bilder.obi.cz/bd0d87ed-5879-443b-84cc-357c544c4048/prZZC/4673398.jpg"
+                        alt="toaletní papír bejzik" class="img-fluid">
+                    <div class="card-body">
+                        <h5 class="card-title">Toaletní papír <strong>Entrprajs</strong></h5>
+                        <p class="card-text">Papír ideální pro velké společnosti, které nechtějí dávat nekřesťanské
+                            peníze za toaletní papír. Papír je jemný a tenký, ideální pro unavené ruce, které už nemohou.</p>
+                        <a href="#" class="btn btn-primary">Koupit</a>
+                    </div>
+                </div>
+            </div>
             <div class="col-12 col-md-3">
                 <div class="card">
                     <img src="https://www.alter-hk.cz/foto/velke/3101.jpg" alt="toaletní papír bejzik"
@@ -71,18 +87,6 @@
             </div>
             <div class="col-12 col-md-3">
                 <div class="card">
-                    <img src="https://www.krufin.cz/wp-content/uploads/2019/11/vyr_1312toilet-paper-1133884__340.png"
-                        alt="toaletní papír bejzik" class="img-fluid">
-                    <div class="card-body">
-                        <h5 class="card-title">Toaletní papír <strong>Entrprajs</strong></h5>
-                        <p class="card-text">Papír ideální pro velké společnosti, které nechtějí dávat nekřesťanské
-                            peníze za papír. Papír je jemný a tenký, ideální pro unavené ruce, které už nemohou.</p>
-                        <a href="#" class="btn btn-primary">Koupit</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-3">
-                <div class="card">
                     <img src="https://www.ebarvy24.cz/fotky32932/fotos/_vyr_201330-duroflex_116mmx25m.jpg"
                         alt="toaletní papír bejzik" class="img-fluid">
                     <div class="card-body">
@@ -96,9 +100,16 @@
         </div>
     </div>
 
+    <!-- -->S
 
-    <!-- -->
 
+    <div class="container">
+        <footer class="bg-light text-center text-lg-start" style="margin-top: 20px;">
+            <div class="text-center p-3">
+                © 2025 Toaleťáky cz
+            </div>
+        </footer>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
