@@ -15,7 +15,7 @@ html{
 .closeSignUp {
     background-color: red;
     font-size: small; /* or remove this */
-    --hover-color: var(--hover-color-default);
+    --hover-color: darkred;
 }
 .closeSignUp:hover {
     background-color: var(--hover-color);
