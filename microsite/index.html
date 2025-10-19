@@ -36,7 +36,7 @@
                 <!-- prvky napravo-->
                 <ul class="navbar-nav ms-auto d-flex gap-2 align-items-center">
                     <li class="nav-item">
-                        <a class="nav-link" href="#" id="signUpBtn">Přihlásit</a>
+                        <a class="nav-link" href="#" id="signInBtn">Přihlásit</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#" id="signUpBtn">Registrace</a>
@@ -52,11 +52,13 @@
     <div class="popup-overlay" id="signUp" style="background-color: #f8f9fa; padding-left: 10px;">
         <div class="popup signup-popup">
             <h2>Přihlášní / Registrace</h2>
-            <p>Pro přihlášení/registraci zadejte svůj email</p>
+            <p>Pro přihlášení/registraci zadejte svůj email a heslo</p>
             <input type="email" name="email" class="form-control" placeholder="Zadejte svůj email"
                 aria-label="Zadejte platný email" id="emailInput">
+            <input type="password" name="password" class="form-control mt-1" placeholder="Zadejte své heslo"
+                aria-label="Zadejte své heslo" id="passwordInput">
             <div class="d-flex gap-2" style="padding-top: 6px;">
-                <button class="btn btn-primary" id="submitEmail">Použít</button>
+                <button class="btn btn-primary" id="logIn">Použít</button>
                 <button class="btn btn-secondary closeSignUp" id="closeSignUp">Zavřít</button>
             </div>
         </div>
@@ -130,40 +132,47 @@
 
     <div class="container" id="udalosti">
         <div class="row">
-            <div class="col-6">
+            <div class="col-12 col-md-6">
                 <h2 class="my-4">Nadcházející události</h2>
+            </div>
+            <div class="col-12 col-md-6">
                 <h2 class="my-4">Již se stalo</h2>
+                <div class="row">
+                    <div class="col-6">
+
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
     <div class="container" id="kontakty">
         <footer class="bg-white text-black" style="border-top: 1px solid rgba(0,0,0,0.6);">
-        <div class="row py-4 align-items-center">
-            <div class="col-12 col-md-4 text-center text-md-start mb-3 mb-md-0">
-                <a class="navbar-brand text-black fw-bold" href="#">Toaleťáky.cz</a>
-            </div>
+            <div class="row py-4 align-items-center">
+                <div class="col-12 col-md-4 text-center text-md-start mb-3 mb-md-0">
+                    <a class="navbar-brand text-black fw-bold" href="#">Toaleťáky.cz</a>
+                </div>
 
-            <div class="col-12 col-md-4 text-center mb-3 mb-md-0"></div>
-            <h6 class="mb-1 fw-semibold">Kontakty</h6>
-            <p class="mb-0 small">Email:
-                <a href="mailto:lorem.ipsum@dolor.sit"
-                    class="text-black text-decoration-underline">lorem.ipsum@dolor.sit</a>
-            </p>
-            <p class="mb-0 small">Tel:
-                <a href="tel:+420792777305" class="text-black text-decoration-underline">+420 792 777 305</a>
-            </p>
-            <p class="mb-0 small">
-                Adresa: <a href="https://maps.app.goo.gl/yE5anjihtmrnMpY59"
-                    class="text-black text-decoration-underline">Shrekovo bažina</a>
-            </p>
-        </div>
-        <div>
-            <input type="email" name="email" class="form-control" placeholder="Zadejte svůj email pro odběr novinek"
-                aria-label="Email for newsletter" id="newsletter">
-            <button class="btn btn-primary mt-2" type="button" id="signUpBtn">Odebírat</button>
-        </div>
-        <div class="small">© 2025 Toaleťáky.cz</div>
+                <div class="col-12 col-md-4 text-center mb-3 mb-md-0"></div>
+                <h6 class="mb-1 fw-semibold">Kontakty</h6>
+                <p class="mb-0 small">Email:
+                    <a href="mailto:toaletaky@zachod.cz"
+                        class="text-black text-decoration-underline">toaletaky@zachod.cz</a>
+                </p>
+                <p class="mb-0 small">Tel:
+                    <a href="tel:+420792777305" class="text-black text-decoration-underline">+420 792 777 305</a>
+                </p>
+                <p class="mb-0 small">
+                    Adresa: <a href="https://maps.app.goo.gl/yE5anjihtmrnMpY59"
+                        class="text-black text-decoration-underline">Shrekovo bažina</a>
+                </p>
+            </div>
+            <div>
+                <input type="email" name="email" class="form-control" placeholder="Zadejte svůj email pro odběr novinek"
+                    aria-label="Email for newsletter" id="newsletter">
+                <button class="btn btn-primary mt-2" type="button" id="newsletter-btn">Odebírat</button>
+            </div>
+            <div class="small">© 2025 Toaleťáky.cz</div>
     </div>
     </footer>
 
