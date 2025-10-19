@@ -26,7 +26,7 @@
                         <a class="nav-link" aria-current="page" href="#nabidka">Nabídka</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Něco</a>
+                        <a class="nav-link" href="#udalosti">Události</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#kontakty">Kontakty</a>
@@ -49,13 +49,13 @@
         </div>
     </nav>
 
-    <div class="popup-overlay" id="signUp">
+    <div class="popup-overlay" id="signUp" style="background-color: #f8f9fa; padding-left: 10px;">
         <div class="popup signup-popup">
             <h2>Přihlášní / Registrace</h2>
             <p>Pro přihlášení/registraci zadejte svůj email</p>
             <input type="email" name="email" class="form-control" placeholder="Zadejte svůj email"
                 aria-label="Zadejte platný email" id="emailInput">
-            <div class="d-flex gap-2">
+            <div class="d-flex gap-2" style="padding-top: 6px;">
                 <button class="btn btn-primary" id="submitEmail">Použít</button>
                 <button class="btn btn-secondary closeSignUp" id="closeSignUp">Zavřít</button>
             </div>
@@ -124,6 +124,15 @@
                         <a href="#" class="btn btn-primary mt-auto">Koupit</a>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="udalosti">
+        <div class="row">
+            <div class="col-6">
+                <h2 class="my-4">Nadcházející události</h2>
+                <h2 class="my-4">Již se stalo</h2>
             </div>
         </div>
     </div>
