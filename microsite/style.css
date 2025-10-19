@@ -5,3 +5,16 @@ html{
 .koupit-btn{
     bottom:0;
 }
+
+.signup-popup{
+    border: 3px solid rgb(11, 94, 215);
+}
+
+.closeSignUp {
+    background-color: red;
+    font-size: small; /* or remove this */
+    --hover-color: var(--hover-color-default);
+}
+.closeSignUp:hover {
+    background-color: var(--hover-color);
+}

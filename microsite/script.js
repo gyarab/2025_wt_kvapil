@@ -11,3 +11,19 @@ input.addEventListener("keydown", (event) => {
         input.value = '';
     }
 });
+
+//popup for signup/signim
+const popup = document.getElementById('signUp');
+const openBtn = document.getElementById('signUpBtn');
+const closeBtn = document.getElementById('closeSignUp');
+
+//makes it hidden from start
+popup.style.display = 'none';
+
+signUpBtn.addEventListener('click', () => {
+    popup.style.display = 'flex';
+});
+
+closeBtn.addEventListener('click', () => {
+    popup.style.display = 'none';
+});
