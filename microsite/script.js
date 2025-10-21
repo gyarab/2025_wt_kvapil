@@ -69,6 +69,10 @@ function updateCart() {
     const sum = entrprajsAmount + bejzikAmount + premiumAmount + profiAmount;
     cartBtn.textContent = 'Košík (' + sum + ')';
     shop.style.display = sum > 0 ? 'block' : 'none';
+    entrprajsKosik.textContent = entrprajsAmount;
+    bejzikKosik.textContent = bejzikAmount;
+    premiumKosik.textContent = premiumAmount;
+    profiKosik.textContent = profiAmount;
 }
 
 
@@ -85,6 +89,66 @@ const bejzikBtn = document.getElementById('bejzik');
 const premiumBtn = document.getElementById('premium');
 const profiBtn = document.getElementById('profi');
 const cartBtn = document.getElementById('cartBtn');
+//kosikovy veci
+const entrprajsKosik = document.getElementById('entrprajsKosik');
+const bejzikKosik = document.getElementById('bejzikKosik');
+const premiumKosik = document.getElementById('premiumKosik');
+const profiKosik = document.getElementById('profiKosik');
+//pridávání/odebíraní - tlačítka
+const addEntrprajsBtn = document.getElementById('0');
+const removeEntrprajsBtn = document.getElementById('1');
+const addBejzikBtn = document.getElementById('2');
+const removeBejzikBtn = document.getElementById('3');
+const addPremiumBtn = document.getElementById('4');
+const removePremiumBtn = document.getElementById('5');
+const addProfiBtn = document.getElementById('6');
+const removeProfiBtn = document.getElementById('7');
+
+//do we really have to add listener to each button? apparently yes
+addEntrprajsBtn.addEventListener('click', () => {
+    entrprajsAmount++;
+    shop.style.display = 'block';
+    updateCart();
+});
+removeEntrprajsBtn.addEventListener('click', () => {
+    if (entrprajsAmount > 0) {
+        entrprajsAmount--;
+        updateCart();
+    }
+});
+addBejzikBtn.addEventListener('click', () => {
+    bejzikAmount++;
+    shop.style.display = 'block';
+    updateCart();
+});
+removeBejzikBtn.addEventListener('click', () => {
+    if (bejzikAmount > 0) {
+        bejzikAmount--;
+        updateCart();
+    }
+});
+addPremiumBtn.addEventListener('click', () => {
+    premiumAmount++;
+    shop.style.display = 'block';
+    updateCart();
+});
+removePremiumBtn.addEventListener('click', () => {
+    if (premiumAmount > 0) {
+        premiumAmount--;
+        updateCart();
+    }
+});
+addProfiBtn.addEventListener('click', () => {
+    profiAmount++;
+    shop.style.display = 'block';
+    updateCart();
+});
+removeProfiBtn.addEventListener('click', () => {
+    if (profiAmount > 0) {
+        profiAmount--;
+        updateCart();
+    }
+});
 
 cartBtn.addEventListener('click', () => {
     if (sum > 0) {

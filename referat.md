@@ -1,4 +1,4 @@
-# Clive Sinclair (1940–2021)
+# Clive Sinclair
 
 ## Mládí a začátky
 

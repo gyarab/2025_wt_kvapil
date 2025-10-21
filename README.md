@@ -17,6 +17,13 @@ V rootu tohoto repozitáře se nachází soubor "referat.md", ve kterém se nach
 ### Adresář "prvni_stranka": 
 - index.html
 
+### Adresář microsite
+- index.html
+- style.css
+- script.js
+
 ## Overview
 V adresáři "prvni_web" jsou weby mezi sebou staticky linkované + CSS soubor. V rootu jsou 2 soubory typu .md, README.md vysvětluje co se v repozitáři nachází a referat.md je referát o osobnosti Clive Sinclair.
 Všechny (html) soubory mají bootstrap navigaci až na "index.html" v adresáři prvni_stranka.
+
+V adresáři microsite mám onepager pro fiktivní eshop Toaleťáky.cz.
