@@ -15,5 +15,11 @@ html{
 .closeSignUp {
     background-color: red;
     font-size: small; /* or remove this */
-    --hover-color: darkred;
+    --hover-color: darkred !important; /* why does this not work :/... */
+}
+
+.addRemoveBtn{
+    background-color: #f1f1f2;
+    border: 2px solid #f1f1f2;
+    color: black;
 }

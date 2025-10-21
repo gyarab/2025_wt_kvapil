@@ -42,8 +42,8 @@
                         <a class="nav-link" href="#" id="signUpBtn">Registrace</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link btn btn-primary text-white px-3" style="background-color: rgb(11, 94, 215);"
-                            id="cartBtn">Košík (0)</a> <!--upravit-->
+                        <a href="#shop" class="nav-link btn btn-primary text-white px-3"
+                            style="background-color: rgb(11, 94, 215);" id="cartBtn">Košík (0)</a> <!--upravit-->
                     </li>
                 </ul>
             </div>
@@ -131,37 +131,38 @@
         </div>
     </div>
 
-    <div class="container" id="shop" style="margin-top: 25px;"> <!--border-bottom: 1px solid rgba(0,0,0,0.6);-->
-        <div class="row">
+    <div class="container" id="shop" style="margin-top: 25px;">
+        <div class="row" style="border-bottom: 1px solid rgba(0,0,0,0.6); padding-bottom: 14px;">
             <h3 class="text-center"><u>Váš košík</u></h3>
-            <div class="col-12 col-md-3 text-center">
+            <div class="col-6 col-md-3 text-center">
                 <h4 class="text-center">Entrprajs</h4>
                 <span>V košíku: </span>
                 <span id="entrprajsKosik">0</span>
-                <span><a href="#shop" id="0">+</a></span>
-                <span><a href="#shop" id="1">-</a></span>
+                <span><a href="#shop" class="btn mt-auto btn-secondary addRemoveBtn" id="0">+</a></span>
+                <span><a href="#shop" class="btn mt-auto btn-secondary addRemoveBtn" id="1">-</a></span>
             </div>
-            <div class="col-12 col-md-3 text-center">
+            <div class="col-6 col-md-3 text-center">
                 <h4 class="text-center">Bejzik</h4>
                 <span>V košíku: </span>
                 <span id="bejzikKosik">0</span>
-                <span><a href="#shop" id="2">+</a></span>
-                <span><a href="#shop" id="3">-</a></span>
+                <span><a href="#shop" class="btn mt-auto btn-secondary addRemoveBtn" id="2">+</a></span>
+                <span><a href="#shop" class="btn mt-auto btn-secondary addRemoveBtn" id="3">-</a></span>
             </div>
-            <div class="col-12 col-md-3 text-center">
+            <div class="col-6 col-md-3 text-center">
                 <h4 class="text-center">Prémium</h4>
                 <span>V košíku: </span>
                 <span id="premiumKosik">0</span>
-                <span><a href="#shop" id="4">+</a></span>
-                <span><a href="#shop" id="5">-</a></span>
+                <span><a href="#shop" class="btn mt-auto btn-secondary addRemoveBtn" id="4">+</a></span>
+                <span><a href="#shop" class="btn mt-auto btn-secondary addRemoveBtn" id="5">-</a></span>
             </div>
-            <div class="col-12 col-md-3 text-center">
+            <div class="col-6 col-md-3 text-center">
                 <h4 class="text-center">Profi</h4>
                 <span>V košíku: </span>
                 <span id="profiKosik">0</span>
-                <span><a href="#shop" id="6">+</a></span>
-                <span><a href="#shop" id="7">-</a></span>
+                <span><a href="#shop" class="btn mt-auto btn-secondary addRemoveBtn" id="6">+</a></span>
+                <span><a href="#shop" class="btn mt-auto btn-secondary addRemoveBtn" id="7">-</a></span>
             </div>
+            <a href="#shop" class="closeSignUp btn mt-auto w-auto" id="deleteAllBtn">Odebrat vše</a>
         </div>
     </div>
 

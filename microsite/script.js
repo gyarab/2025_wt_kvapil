@@ -103,8 +103,16 @@ const addPremiumBtn = document.getElementById('4');
 const removePremiumBtn = document.getElementById('5');
 const addProfiBtn = document.getElementById('6');
 const removeProfiBtn = document.getElementById('7');
+const deleteAllBtn = document.getElementById('deleteAllBtn');
 
 //do we really have to add listener to each button? apparently yes
+deleteAllBtn.addEventListener('click', () => {
+    entrprajsAmount = 0;
+    bejzikAmount = 0;
+    premiumAmount = 0;
+    profiAmount = 0;
+    updateCart();
+});
 addEntrprajsBtn.addEventListener('click', () => {
     entrprajsAmount++;
     shop.style.display = 'block';
