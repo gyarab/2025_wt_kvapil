@@ -4,9 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VueJS demo</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 </head>
 <body>
     <h1>VueJS demo</h1>
     <a href="https://vuejs.org/guide/introduction" target="_blank">ZDE!</a>
+
+    <div id="app">
+        {{message}}
+        <br>
+        <button @click="counter++">Counter: {{counter}}</button>
+    </div>
+
+    <script>
+        const app = Vue.createApp({
+            data() {
+                return {
+                    message: 'Hello World!',
+                    counter: 0
+                }
+            }
+        });
+        app.mount('#app');
+    </script>
 </body>
 </html>
