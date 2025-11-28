@@ -1,22 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VueJS demo</title>
-    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
+
 <body>
     <h1>VueJS demo</h1>
-    <a href="https://vuejs.org/guide/introduction" target="_blank">ZDE!</a>
-
+    <!--<a href="https://vuejs.org/guide/introduction" target="_blank">ZDE!</a> /-->
+    <br>
     <div id="app">
-        {{message}}
+        <form>
+            Jméno: <input class="form-control" type="text" name="name" placeholder="Sem napiště své jméno">
+                <select name="planet" class="form-select">
+            <div>
+                <option value="Mars">Mars - SpaceX</option>
+            </div>
+            <div>
+                <option value="Měsíc">Měsíc - ČD (české dráhy)</option>
+            </div>
+            </select>
+            <div>
+                <input type="number" name="days" id="days">
+            </div>
+            <input type="checkbox" id="terms" class="form-check-input">
+            <label for="terms" class="form-check-label">Souhlasím, že uvedené společnosti mě nemusí dopravit zpět.</label>
+            <button class="btn btn-primary">Odeslat</button>
+        </form>
+
+        <!--        {{message}}
         <br>
         <button @click="counter++">Counter: {{counter}}</button>
         <br>
         {{'Random number: ' + Math.ceil(Math.random() * 10)}}
+        -->
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 
     <script>
         const app = Vue.createApp({
@@ -30,4 +57,5 @@
         app.mount('#app');
     </script>
 </body>
+
 </html>
