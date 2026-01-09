@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
 
 <head>
     <meta charset="UTF-8">
@@ -26,10 +26,10 @@
                         <label for="planet">Destinace</label>
                         <select class="form-select" id="planet" name="planet">
                             <option disabled value="">Vyber planetu…</option>
-                            <option value="Mars">Mars – pro introverty, co nemusí kyslík</option>
-                            <option value="Měsíc">Měsíc – víkendovka s dobrou Wi-Fi</option>
-                            <option value="Jupiter">Jupiter – jen pro opravdu odolné</option>
-                            <option value="Pluto">Pluto – technicky možná ne planeta, ale proč ne</option>
+                            <option value="Mars">Mars -pro introverty, co nemusí kyslík</option>
+                            <option value="Měsíc">Měsíc - víkendovka s dobrou Wi-Fi</option>
+                            <option value="Jupiter">Jupiter - jen pro opravdu odolné</option>
+                            <option value="Pluto">Pluto - technicky možná ne planeta, ale proč ne</option>
                         </select>
                     </div>
                     <div class="mb-3">
@@ -47,16 +47,11 @@
                         Tento formulář nikam neposílá — vše se děje v prohlížeči.
                     </p>
                 </form>
-                <!-- {{ message }}
-                <br>
-                {{'Random number: ' + Math.ceil(Math.random()*6) }}
-                <br>
-                <button v-on:click="count++">Kliknuto: {{ count }}</button> -->
             </div>
             <div class="card p-3">
                 <h2>Palubní lístek</h2>
                 <p>
-                    Jméno: <strong>Testilav Testicle</strong><br>
+                    Jméno: <strong>{{ trip.name }}</strong><br>
                     Destinace: <strong>Mars</strong><br>
                     Počet dní: <strong>3</strong><br>
                     Odhadovaná cena: <strong>2400 $kzp</strong>
@@ -76,7 +71,13 @@
             data() {
                 return {
                     message: 'Hello World!',
-                    counter: 0
+                    counter: 0,
+                    trip:{
+                        name: '',
+                        planet: '',
+                        days: null,
+                        termsAccepted: false
+                    }
                 }
             }
         });
