@@ -14,9 +14,6 @@ def domecek(a):
     left(90)
     forward(a)
 
-#for i in range(6):
-#    domecek(50*i)
-
 for i in range(11):
     domecek(random.randint(10, 20))
     right(36)
