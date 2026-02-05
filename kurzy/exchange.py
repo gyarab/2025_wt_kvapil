@@ -23,7 +23,6 @@ print("Kurz eura je", Fore.GREEN + f"{rate_eur:.2f}" + "CZK" + Style.RESET_ALL)
 
 curency = input("Na jakou měnu chceš převést? (CZK/EUR)? ")
 
-# Validate currency input
 valid_currencies = ["CZK", "EUR"]
 while curency.upper() not in valid_currencies:
     print("Neplatná měna. Zadej pouze CZK nebo EUR.")
